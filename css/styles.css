@@ -1,0 +1,460 @@
+html, body, main {
+  height: 100%;
+}
+body {
+	font-family: 'Balsamiq Sans';
+}
+header {
+  background: url('../img/header-Фон.png') center center no-repeat;
+  min-height: 100%;
+  background-size: cover;
+  color: #ffffff;
+}
+.container-fluid {
+	display: flex;
+	justify-content: space-around;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #ffffff;
+}
+.navbar-nav {
+	padding-left: 35px;
+}
+.time-frame {
+	display: flex;
+	align-items: center;
+	padding-left: 65px;
+}
+.clock-logo {
+	margin-right: 10px;
+}
+.text-time-frame p {
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+.back-call {
+	padding-left: 35px;
+}
+.btn-call .btn-primary {
+	width: 200px;
+	height: 24px;
+	box-shadow: 0 0 13px rgba(1, 162, 166, 0.7);
+	background-color: #01a2a6;
+	border-radius: 20px;
+	padding: 0;
+} 
+header .title-text {
+	padding-top: 120px;
+}
+header .title-text h1 {
+	font-size: 27px;
+	margin: 0 0 40px 0;
+}
+#tour-to-Arkaim {
+
+}
+header .title-text p {
+	font-size: 18px;
+}
+.watch-program .btn {
+	margin-top: 93px;
+	height: 38px;
+	width: 228px;
+	box-shadow: 0 0 13px rgba(1, 162, 166, 0.7);
+	background-color: #01a2a6;
+	border-radius: 30px;
+}
+section h2 {
+	font-size: 	22px;
+	font-weight: 700;
+}
+.changes-life, .climbing-experience, .answers-on-questions {
+	display: flex;
+	justify-content: space-between;
+}
+.changes-life-text {
+	flex-basis: 63%;
+}
+.changes-life-text h2 {
+	margin-bottom: 	24px;
+}
+.changes-life-img img {
+	margin-top: 35px !important;
+}
+.list {
+	padding-left: 0;
+}
+.list li {
+	list-style-type: none;
+	display: flex;
+	position: relative;
+	line-height: 30px;
+}
+.dot:after {
+	content: '';
+	width: 11px;
+	height: 11px;
+	background-color: #06a4a8;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0 10px 0 0;
+} 
+.dot:before{
+	content: '';
+	top: 0.5em;
+	bottom: -0.5em;
+	width: 2px;
+	position: absolute;
+	left: 4px;
+	background-color: #000e0e;
+	z-index: -1;
+}
+.list li:last-child .dot:before {
+	content: none;
+}
+.mountain-title {
+	display: flex;
+	align-items: flex-end;
+	margin: 50px 0 30px 10px;
+}
+.mountain-title h2 {
+	margin: 0 0 0 20px;
+}
+.climbing-experience-text {
+	margin-left: 10px;
+}
+.climbing-experience-text p {
+	margin: 0 0 10px;
+}
+.climbing-experience-text p:first-child {
+	margin-top: 5px;
+}
+.answers-on-questions {
+	margin-top: 100px;
+}
+.answers-on-questions ul, .practical-experience ul {
+	list-style-type: none;
+}
+.answers-on-questions-text {
+	flex-basis: 55%;
+}
+.answers-on-questions-text ul {
+	margin-left: 20px;
+}
+.answers-on-questions-text ul li {
+	line-height: 1;
+}
+.answers-on-questions-img {
+	margin-top: 10px;
+}
+.answers-title {
+	display: flex;
+	margin-bottom: 15px;
+	align-items: center;
+}
+.answers-title h2 {
+	margin: 0 0 0 15px;
+	font-size: 	22px;
+	font-weight: 700;
+}
+.dash {
+	font-size: 	22px;
+	color: #00cdd2 !important;
+}
+.practical-experience {
+	display: flex;
+	margin-top: 40px;
+}
+.practical-experience ul {
+	margin-left: 15px;
+}
+.practical-experience-text {
+	margin: 10px 0 0 50px;
+}
+.practical-experience-text ul li {
+	line-height: 1;
+}
+.experience-heart {
+	margin-right: 	15px;
+}
+.skill-experience-title {
+	display: flex;
+	align-items: center;
+}
+.our-method {
+	display: flex;	
+	margin-top: 	100px;
+	margin-bottom: 	50px;
+}
+.our-method-text {
+	flex-basis: 65%;
+}
+.our-method-img {
+	margin-top: 20px;
+}
+.method-title {
+	display: flex;	
+	align-items: center;	
+	margin-bottom: 	15px;
+}
+.method-title h2 {
+	margin: 15px 0 0 8px;
+}
+.stages {
+	display: 	flex;	
+	padding: 11px 14px 11px 18px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+	border-radius: 	15px;
+	margin-bottom: 	14px;
+	max-width: 	550px;
+}
+.stages p {
+	margin: 0;
+	flex-basis: 96%;
+}
+#first-arrow {
+	margin-top: 12px;
+}
+.v-of-b-fate {
+	display: flex;	
+}
+.v-of-b-fate-text {
+	margin-left: 40px;
+}
+.v-of-b-fate-text p {
+	margin-left: 55px;
+}
+.v-of-b-fate-text p:last-child {
+	margin-bottom: 	0;
+}
+.v-of-b-fate-title {
+	display: flex;	
+	align-items: 	center;	
+}
+.v-of-b-fate-title h2 {
+	margin-left: 10px;
+}
+.table-programs {
+	background: url('../img/Слой 6.png') center center no-repeat;
+	padding-top: 160px;	
+	margin-top: 12px;
+}
+.table-programs h2 {
+	color: #ffffff;
+	font-family: "Balsamiq Sans";
+	font-size: 22px;
+	font-weight: 500;
+}
+.programs {
+	display: 	flex;
+	padding-top: 37px;
+	padding-bottom: 130px;	
+	background: url('');
+}
+.programs h3 {
+	margin-left: 10px;
+	font-size: 	18px;
+	font-weight: 500;
+	margin-top: 10px;
+	color: #ffffff;
+}
+.program-2-days, .program-3-days {
+	flex-basis: 50%;
+} 
+.programs-title {
+	display: flex;
+	margin-left: 30px;	
+	padding-bottom: 20px;
+}
+.program-2-days ul {
+
+}
+.programs ul li {
+	display: flex;	
+	list-style-type: 	none;
+	position: 	relative;
+	color: #ffffff;
+}
+.programs ul li:last-child .dot:before {
+	top: 0.5em;
+	bottom: 0.5em;
+	width: 1px;
+}
+.dot-2:after {
+	content: '';
+	width: 18px;
+	height: 1px;
+	background-color: #06a4a8;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0 5px 5px 5px;
+	right: 10px
+} 
+.programs ul li:first-child .dot-2:after {
+	width: 12px;
+	height: 12px;
+	margin-left: -2px;
+	margin-top: -10px;
+}
+.programs ul li p {
+	margin: 0;
+}
+.programs h3 {
+	padding-top: 0;
+	margin-top: 5px;
+}
+.dot-2:before {
+	background-color: #ffffff;
+	z-index: 0;
+	width: 1px;
+}
+.first-step {
+	margin-bottom: 	10px;
+	margin-left: 4px;
+}
+.last-step:after {
+	width: 12px;
+	height: 12px;
+	margin-left: -2px;
+	margin-top: 5px;
+	z-index: 99;
+}
+.show-more {
+	color: #00baff;
+	text-decoration: underline;
+}
+.last-li {
+	margin-left: 12px;
+}
+.duration {
+	margin-left: 27px;
+}
+.tour-cost {
+	display: flex;
+	color: #ffffff;
+	padding: 20px 30px 0 30px;
+}
+.tour-cost-text {
+	margin-left: 20px;
+}
+.tour-price {
+	color: #ff0000;
+}
+.all-is-provided {
+	display: flex;
+	margin-top: 20px;
+}
+section h3 {
+	color: #000000;
+	font-family: "Balsamiq Sans";
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 25px;
+}
+.shipping-form {
+	width: 828px;
+	max-width: 80%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+	border: 2px solid #dadada;
+	margin-top: 42px;
+	margin-bottom: 100px;
+	border-radius: 20px;
+	border: none;
+	background-color: #f6f6f6;
+}
+.title-form {
+	background-color: #c1c1c1;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.title-form h3 {
+	margin: 0;
+	padding: 25px 0;
+}
+.shipping-form .inputs {
+	margin-top: 30px;
+}
+.shipping-form input {
+	width: 230px;
+	height: 33px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+	background-color: #ffffff;
+	border: 2px solid #dadada;
+	border-radius: 8px;
+	padding: 5px 5px 5px 30px;
+}
+.icon-man {
+	background: url('../img/man-user.png') no-repeat center left;
+	background-position: 5% 40%;
+}
+.icon-phone {
+	background: url('../img/phone-receiver.png') no-repeat center left;
+	background-position: 5% 45%;
+}
+.icon-email {
+	background: url('../img/close-envelope.png') no-repeat center left;
+	background-position: 5% 45%;
+}
+.shipping-form button {
+	width: 173px;
+	height: 33px;
+	box-shadow: 0 0 13px rgba(1, 162, 166, 0.7);
+	background-color: #01a2a6;
+	margin-top: 33px;
+	color: #ffffff;
+	font-family: "Balsamiq Sans";
+	font-size: 16px;
+	border-radius: 25px;
+	border: 0;
+}
+.shipping-form p {
+	color: #000000;
+	font-family: "Balsamiq Sans";
+	font-size: 16px;
+	font-weight: 400;
+	color: #000000;
+	margin: 0;
+}
+.privacy-policy {
+	color: #0066ff;
+}
+.block-warning {
+	display: flex;
+	margin: 30px 0 30px 50px;
+}
+.block-warning img {
+	margin-right: 5px;
+}
+.tables {
+	background: url('../img/Восхождение.png') center center no-repeat;
+}
+.tables .container {
+	padding: 100px 0;
+	max-width: 60%;
+} 
+.tables h2 {
+	color: #ffffff;
+	margin-bottom: 25px;
+}
+.tables p {
+	color: #ffffff;
+	font-family: "Balsamiq Sans";
+	font-size: 16px;
+	font-weight: 400;
+	padding-top: 0;
+}
+.table {
+	margin-bottom: 25px;
+  	overflow: hidden; 
+  	border-radius: 15px;
+  	border-collapse: separate;
+}
+.table td {
+	color: #ffffff;
+}
+.table td a {
+	text-decoration: underline;
+}
+.table td, .table th {
+	padding: .4rem;
+}
