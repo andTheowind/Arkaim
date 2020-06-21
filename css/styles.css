@@ -454,10 +454,17 @@ section h3 {
 }
 .table td a {
 	text-decoration: underline;
+	color: #00baff;
 }
 .table td, .table th {
 	padding: .4rem;
 }
 .discount {
+	color: #ff0000;
+}
+.first-letter {
+	color: #01a2a6;
+}
+.red-star {
 	color: #ff0000;
 }
