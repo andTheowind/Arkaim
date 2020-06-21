@@ -522,3 +522,15 @@ section h3 {
 		margin-top: 40px;
 	}
 }
+@media screen and (min-width: 1920px) {
+	header .title-text {
+		padding-top: 200px;
+	}
+	header .title-text h1 {
+		font-size: 32px;
+		margin-bottom: 90px;
+	}
+	.watch-program .btn {
+		margin-top: 60px;
+	}
+}
