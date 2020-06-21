@@ -468,3 +468,10 @@ section h3 {
 .red-star {
 	color: #ff0000;
 }
+.videos {
+	display: flex;
+	align-items: center;
+}
+.arrows {
+	padding: 0 25px;
+}
