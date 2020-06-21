@@ -44,11 +44,11 @@ header {
 	padding: 0;
 } 
 header .title-text {
-	padding-top: 120px;
+	padding-top: 8rem;
 }
 header .title-text h1 {
 	font-size: 27px;
-	margin: 0 0 40px 0;
+	margin: 0 0 4rem 0;
 }
 #tour-to-Arkaim {
 
@@ -57,7 +57,7 @@ header .title-text p {
 	font-size: 18px;
 }
 .watch-program .btn {
-	margin-top: 93px;
+	margin-top: 3rem;
 	height: 38px;
 	width: 228px;
 	box-shadow: 0 0 13px rgba(1, 162, 166, 0.7);
@@ -478,4 +478,17 @@ section h3 {
 }
 .arrows {
 	padding: 0 25px;
+}
+.tour-hosts > .container {
+	display: flex;
+	justify-content: space-between;
+}
+.instructor-explorer {
+	flex-basis: 50%;
+}
+.tour-hosts ul {
+	padding-left: 0;
+}
+.tour-hosts ul li {
+	list-style-type: none;
 }
