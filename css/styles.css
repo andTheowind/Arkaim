@@ -537,4 +537,7 @@ section h3 {
 		margin-top: 70px;
 		margin-bottom: 50px;
 	}
+	.watch-program .btn {
+		height: 62px;
+	}
 }
