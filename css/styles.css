@@ -458,3 +458,6 @@ section h3 {
 .table td, .table th {
 	padding: .4rem;
 }
+.discount {
+	color: #ff0000;
+}
