@@ -1,18 +1,22 @@
 html, body, main {
-  height: 100%;
+	height: 100%;
 }
 body {
 	font-family: 'Balsamiq Sans';
 }
 header {
-  background: url('../img/header-Фон.png') center center no-repeat;
-  min-height: 100%;
-  background-size: cover;
-  color: #ffffff;
+	background: url('../img/header-Фон.png') center center no-repeat;
+	min-height: 100%;
+	background-size: cover;
+	color: #ffffff;
 }
 .container-fluid {
 	display: flex;
 	justify-content: space-around;
+}
+.header-buttons {
+	display: 	flex;
+	flex-direction: column;	
 }
 .navbar-light .navbar-nav .nav-link {
 	color: #ffffff;
@@ -44,25 +48,37 @@ header {
 	padding: 0;
 } 
 header .title-text {
-	padding-top: 8.5rem;
+	padding-top: 105px;
 }
 header .title-text h1 {
 	font-size: 27px;
-	margin: 0 0 2rem 0;
+	margin: 0 0 40px 0;
+	text-shadow: black 1px 1px 0, black -1px -1px 0, 
+                 black -1px 1px 0, black 1px -1px 0 !important;
 }
 #tour-to-Arkaim {
-
+	color: #01a2a6;
 }
 header .title-text p {
 	font-size: 18px;
 }
+.youtube-button {
+	display: flex;	
+	margin-right: 50px;	
+}
+.youtube-button  span {
+	padding: 0;
+	margin-top: 18px;
+}
 .watch-program .btn {
-	margin-top: 3rem;
 	height: 38px;
 	width: 228px;
 	box-shadow: 0 0 13px rgba(1, 162, 166, 0.7);
 	background-color: #01a2a6;
 	border-radius: 30px;
+}
+.watch-program .btn img {
+	margin-left: 2px;
 }
 section h2 {
 	font-size: 	22px;
@@ -491,4 +507,18 @@ section h3 {
 }
 .tour-hosts ul li {
 	list-style-type: none;
+}
+
+
+@media screen and (min-width: 1600px) {
+	header .title-text {
+		padding-top: 135px;
+	}
+	header .title-text h1 {
+		font-size: 30px;
+		margin-bottom: 60px;
+	}
+	.watch-program .btn {
+		margin-top: 30px;
+	}
 }
