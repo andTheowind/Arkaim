@@ -524,13 +524,16 @@ section h3 {
 }
 @media screen and (min-width: 1920px) {
 	header .title-text {
-		padding-top: 200px;
+		padding-top: 220px;
 	}
 	header .title-text h1 {
 		font-size: 32px;
 		margin-bottom: 90px;
 	}
 	.watch-program .btn {
+		margin-top: 60px;
+	}
+	.youtube-button {
 		margin-top: 60px;
 	}
 }
