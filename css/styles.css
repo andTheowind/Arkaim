@@ -236,6 +236,8 @@ section h2 {
 }
 .table-programs {
 	background: url('../img/Слой 6.png') center center no-repeat;
+	min-height: 100%;
+  	background-size: cover;
 	padding-top: 160px;	
 	margin-top: 12px;
 }
@@ -427,6 +429,8 @@ section h3 {
 }
 .tables {
 	background: url('../img/Восхождение.png') center center no-repeat;
+	min-height: 100%;
+  	background-size: cover;
 }
 .tables .container {
 	padding: 100px 0;
