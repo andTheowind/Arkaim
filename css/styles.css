@@ -9,6 +9,7 @@ header {
 	min-height: 100%;
 	background-size: cover;
 	color: #ffffff;
+	max-height: 1440px;
 }
 .container-fluid {
 	display: flex;
@@ -568,8 +569,6 @@ section h3 {
 }
 .photos-arkaim h2 {
 	margin: 60px 0 40px 0;
-	margin-top: 60px;
-	margin-bottom: 40px;
 }
 .photos {
 	display: flex;
