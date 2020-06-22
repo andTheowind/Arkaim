@@ -6,7 +6,6 @@ body {
 }
 header {
 	background: url('../img/header-Фон.png') center center no-repeat;
-	min-height: 100%;
 	background-size: cover;
 	color: #ffffff;
 	max-height: 1440px;
@@ -77,6 +76,7 @@ header .title-text p {
 	box-shadow: 0 0 13px rgba(1, 162, 166, 0.7);
 	background-color: #01a2a6;
 	border-radius: 30px;
+	margin-bottom: 80px;
 }
 .watch-program .btn img {
 	margin-left: 2px;
