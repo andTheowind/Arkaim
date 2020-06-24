@@ -573,9 +573,26 @@ section h3 {
 .photos-arkaim h2 {
 	margin: 60px 0 40px 0;
 }
-.cards-photos img {
+.card-photos {
+}
+.photos > div:hover img {
+	opacity: 1;
+}
+.thumbnail img {
+}
+.cards-photos img:first-child {
 	border-radius: 7px;
 	box-shadow: 0 0 9px rgba(0,0,0,0.5);
+	position: relative;
+}
+.cards-photos img:hover {
+	filter: brightness(60%); 
+}
+.lupa {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	background-color: red;
 }
 .photos-arkaim div {
 	margin: 0 16px;
