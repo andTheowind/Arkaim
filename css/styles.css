@@ -647,8 +647,9 @@ section h3 {
 	margin-bottom: 0;
 }
 .old-instructor-img {
-	width: 285px;
-	height: 212px;
+	width: 268px;
+	height: 193px;
+	padding-bottom: 15px;
 }
 .old-instructor-img img {
 	object-fit: cover;
