@@ -649,7 +649,7 @@ section h3 {
 .old-instructor-img {
 	width: 268px;
 	height: 193px;
-	padding-bottom: 15px;
+	padding-top: 15px;
 }
 .old-instructor-img img {
 	object-fit: cover;
