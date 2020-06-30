@@ -818,10 +818,7 @@ section h3 {
 	padding-bottom: 20px;
 }
 .footer-soc-ics div {
-	padding: 0 18px;
-}
-.footer-soc-ics div:first-child {
-	padding-left: 30px;
+	padding: 0 20px;
 }
 @media screen and (min-height: 1024px) {
 	header .title-text {
