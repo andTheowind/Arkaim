@@ -450,6 +450,15 @@ hr {
 	display: flex;
 	margin-top: 20px;
 }
+.all-is-provided-img {
+	width: 336px;
+	height: 170px;
+}
+.all-is-provided-img img {
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 0 9px rgba(0,0,0,0.5);
+}
 section h3 {
 	color: #000000;
 	font-family: "Balsamiq Sans";
