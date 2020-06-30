@@ -1,6 +1,9 @@
 html, body, main {
 	height: 100%;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
 	font-family: 'Balsamiq Sans';
 }
@@ -23,6 +26,10 @@ header {
 }
 .navbar-nav {
 	padding-left: 35px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	font-weight: bold !important;
+	color: #fff;
 }
 .time-frame {
 	display: flex;
@@ -101,8 +108,15 @@ hr {
 .changes-life-text h2 {
 	margin: 30px 0 24px 0;
 }
+.changes-life-img {
+	max-height: 467px;
+	max-width: 268px;
+}
 .changes-life-img img {
 	margin-top: 35px !important;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 0 9px rgba(0,0,0,0.5);
 }
 .list {
 	padding-left: 0;
@@ -122,6 +136,9 @@ hr {
 	border-radius: 50%;
 	margin: 0 10px 0 0;
 } 
+.dot:hover:after {
+	background-color: #00d6db;
+}
 .dot:before{
 	content: '';
 	top: 0.5em;
@@ -144,13 +161,25 @@ hr {
 	margin: 0 0 0 20px;
 }
 .climbing-experience-text {
-	margin-left: 10px;
+	margin-left: 20px;
 }
 .climbing-experience-text p {
 	margin: 0 0 10px;
 }
 .climbing-experience-text p:first-child {
 	margin-top: 5px;
+}
+.climbing-experience-img {
+	margin-top: 7px;
+	min-width: 240px;
+	max-width: 240px;
+	min-height: 327px;
+	max-height: 327px;
+}
+.climbing-experience-img img {
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 0 9px rgba(0,0,0,0.5);
 }
 .gray-background {
 	background: url('../img/Обложка_благодарность.png') center center no-repeat;
@@ -177,6 +206,15 @@ hr {
 }
 .answers-on-questions-img {
 	margin-top: 10px;
+	max-width: 415px;
+	min-width: 415px;
+	max-height: 218px;
+	min-height: 218px;
+}
+.answers-on-questions-img img {
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 0 9px rgba(0,0,0,0.5);
 }
 .answers-title {
 	display: flex;
@@ -196,6 +234,17 @@ hr {
 	display: flex;
 	margin-top: 40px;
 	padding-bottom: 100px;
+}
+.practical-experience-img {
+	width: 490px;
+	min-width: 490px;
+	height: 285px;
+	min-height: 285px;
+}
+.practical-experience-img img {
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 0 9px rgba(0,0,0,0.5);
 }
 .practical-experience ul {
 	margin-left: 15px;
@@ -222,6 +271,13 @@ hr {
 }
 .our-method-img {
 	margin-top: 20px;
+	width: 362px;
+	height: 195px;
+}
+.our-method-img img {
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 0 9px rgba(0,0,0,0.5);
 }
 .method-title {
 	display: flex;	
@@ -239,6 +295,10 @@ hr {
 	margin-bottom: 	14px;
 	max-width: 	550px;
 }
+.stages:hover {
+	background-color: rgba(0, 0, 0, 0.22);
+	cursor: pointer;
+}
 .stages p {
 	margin: 0;
 	flex-basis: 96%;
@@ -249,6 +309,15 @@ hr {
 .v-of-b-fate {
 	display: flex;	
 	margin-top: 50px;
+}
+.v-of-b-fate-img {
+	width: 394px;
+	height: 271px;
+}
+.v-of-b-fate-img img {
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 0 9px rgba(0,0,0,0.5);
 }
 .v-of-b-fate-text {
 	margin-left: 40px;
@@ -352,6 +421,9 @@ hr {
 	margin-left: -2px;
 	margin-top: 5px;
 	z-index: 99;
+}
+.last-step:hover:after {
+	background-color: #00d6db;
 }
 .show-more {
 	color: #00baff;
@@ -571,7 +643,7 @@ section h3 {
 	margin: auto;
 }
 .photos-arkaim h2 {
-	margin: 60px 0 40px 0;
+	margin: 60px 0 10px 0;
 }
 .card-photos {
 	position: relative;
@@ -584,18 +656,15 @@ section h3 {
 .cards-photos img:first-child {
 	border-radius: 7px;
 	box-shadow: 0 0 9px rgba(0,0,0,0.5);
-	position: relative;
 }
 .cards-photos img:hover {
 	filter: brightness(60%); 
 }
 .lupa {
-	position: absolute;
 	opacity: 0;
 	pointer-events: none;
 }
 .photos-arkaim div {
-	margin: 0 16px;
 }
 .photos {
 	display: flex;
@@ -637,24 +706,108 @@ section h3 {
 	flex-basis: 97%;
 	margin: 0;
 }
+.answers-lists span {
+	color: #01a2a6;
+	font-size: 24px;
+}
+.answers-lists span:hover {
+	cursor: pointer;
+}
+.about-tour {
+	display: flex;
+	line-height: 1;
+	margin: 0 0 40px 0;
+}
+.about-tour-img {
+	min-width: 80px;
+	margin-right: 36px;
+	margin: 20px 36px 0 10px;
+}
+.abt-2-3 {
+	margin: 14px 22px 0 24px;
+}
+.about-tour p {
+	margin: 13px 0;
+}
+.about-tour ul {
+	padding: 0;
+	margin-bottom: 	0;
+}
+.about-tour ul li {
+	list-style-type: none;
+}
 .form-vs-img {
 	margin-top: 20px;
 }
 .finger {
 	margin: 0 40px 0 0;
 }
+.shipping-form-btm {
+	margin-bottom: 100px;
+}
 .shipping-form-2 {
 	margin-top: 0;
+	margin-bottom: 0;
+}
+.see-you {
+	margin-top: 34px;
+	margin-left: 18%;
+	margin-bottom: 32px;
+	color: #000000;
+	font-family: "Balsamiq Sans";
+	font-size: 16px;
+	font-weight: 400;
 }
 .modal.show .modal-dialog {
 	margin: auto;
 }
 .modal-body {
 	padding: 0.5rem;
+	margin: auto;
 }
 .modal-body img {
 	max-width: 750px;
 	width: 100%;
+}
+#footer {
+	background: url('../img/Судьбу.png') center center no-repeat;
+	color: #ffffff;
+}
+.footer-main-menu {
+	display: flex;
+	padding-top: 24px;
+}
+.footer-main-menu ul li {
+	list-style-type: none;
+}
+.footer-main-menu ul a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.our-contacts li p {
+	margin: 0;
+	padding-left: 22px;
+}
+.our-contacts li:nth-of-type(2) {
+	background: url('../img/close-envelope-ftr.png') no-repeat left;
+	background-position: 0% 40%;
+}
+.our-contacts li:nth-of-type(3) {
+	background: url('../img/phone-receiver-ftr.png') no-repeat left;
+	background-position: 0% 40%;
+}
+.our-contacts li:nth-of-type(4) {
+	background: url('../img/clock-circular-outline-ftr.png') no-repeat left;
+	background-position: 0% 40%;
+}
+.ftr-pltc {
+	padding-top: 26px;
+}
+.footer-soc-ics {
+	padding-bottom: 20px;
+}
+.footer-soc-ics div {
+	padding: 0 21px;
 }
 @media screen and (min-height: 1024px) {
 	header .title-text {

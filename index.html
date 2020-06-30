@@ -5,11 +5,85 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 		<title>Аркаим</title>
+		<style>
+		    body {
+		      margin: 0;
+		    }
+		    .slider, .slider-1 {
+		      position: relative;
+		      overflow: hidden;
+		    } 
+		    .slider__wrapper {
+		      display: flex;
+		      transition: transform 0.6s ease;
+		      padding: 30px;
+		    }
+		    .slider__wrapper div {
+		    	display: flex;
+		    	flex-direction: column;
+		    }
+		    .slider__wrapper .review {
+		    	color: #000000;
+				font-family: "Balsamiq Sans";
+				font-size: 16px;
+		    }
+		    .slider__item {
+		      flex: 0 0 25%;
+		      max-width: 25%;
+		    }
+		    .slider__item__video {
+		      flex: 0 0 33.33333%;
+		      max-width: 33.33333%;
+		    }
+		    .slider__control {
+		      position: absolute;
+		      top: 50%;
+		      display: flex;
+		      align-items: center;
+		      justify-content: center;
+		      text-align: center;
+		      transform: translateY(-50%);
+		    }
+		    .slider__control:hover,
+		    .slider__control:focus {
+		      color: #fff;
+		      text-decoration: none;
+		      outline: 0;
+		      opacity: .9;
+		    }
+		    .slider__control_left {
+		      left: 0;
+		    }
+		    .slider__control_right {
+		      right: 0;
+		    }
+		    .slider__control::before {
+		      content: '';
+		      display: inline-block;
+		      width: 20px;
+		      height: 20px;
+		      background: transparent no-repeat center center;
+		      margin-bottom: 20px;
+		    }
+		    .slider__control_left::before {
+		      background-image: url("img/next.png");
+		    }
+		    .slider__control_right::before {
+		      background-image: url("img/next2.png");
+		    }
+		    .slider__item>div {
+		      line-height: 250px;
+		      font-size: 100px;
+		      text-align: center;
+		    }
+		</style>
 	</head>
 	<body>
 		<header>
@@ -74,7 +148,7 @@
 			</div>
 			<div class="container header-buttons">
 				<div class="youtube-button d-flex align-self-end">
-					<a href="#">
+					<a href="https://www.youtube.com/watch?v=TakeKJKRsiE" target="_blank">
 						<img src="img/Многоугольник 1.png" alt="">
 					</a>
 					<span>
@@ -83,7 +157,9 @@
 					</span>
 				</div>
 				<div class="watch-program text-center">
-					<button type="button" class="btn btn-primary">Посмотреть программу <img src="img/___.png" alt="" width="5%"></button>
+					<a href="#arkaim-programs">
+						<button type="button" class="btn btn-primary">Посмотреть программу <img src="img/___.png" alt="" width="5%"></button>
+					</a>
 				</div>
 			</div>
 		</header>
@@ -155,7 +231,9 @@
 						<p>Получив такую возможность, вы смогли бы позволить себе задуматься хотя бы на минуту?</p>
 					</div>
 					<div class="changes-life-img">
-						<img src="img/Сидит-1-мал.png" alt="">
+						<a href="#" class="thumbnail">
+							<img src="img/Сидит 1.png" alt="" width="100%" height="100%">
+						</a>
 					</div>
 				</section>
 				<div class="mountain-title">
@@ -164,7 +242,9 @@
 				</div>
 				<section class="climbing-experience">
 					<div class="climbing-experience-img">
-						<img src="img/Восхождение мал.png" alt="" class="img-responsive">
+						<a href="#" class="thumbnail">
+							<img src="img/Восхождение.jpg" alt="" class="img-responsive"  width="100%" height="100%">
+						</a>
 					</div>
 					<div class="climbing-experience-text">
 						<p>
@@ -206,13 +286,19 @@
 							</ul>
 						</div>
 						<div class="answers-on-questions-img">
-							<img src="img/Спирали.png" alt="">
+							<a href="#" class="thumbnail">
+								<img src="img/Спирали.jpg" alt="" width="100%" height="100%">
+							</a>
 						</div>
 					</div>
 				</section>
 				<section class="practical-experience">
 					<div class="container">
-						<div><img src="img/Объявление 3.png" alt=""></div>
+						<div class="practical-experience-img">
+							<a href="#" class="thumbnail">
+								<img src="img/Объявление 3.png" class="img-responsive" alt="" width="100%" height="100%">
+							</a>
+						</div>
 						<div class="practical-experience-text">
 							<div class="skill-experience-title">
 								<div class="experience-heart">
@@ -261,13 +347,17 @@
 						</div>
 					</div>
 					<div class="our-method-img">
-						<img src="img/Фото долина.png" alt="" class="img-responsive">
+						<a href="#" class="thumbnail">
+							<img src="img/В Сенлер 1.png" alt="" class="img-responsive"  width="100%" height="100%">
+						</a>
 					</div>
 				</section>
 				<hr>
 				<section class="v-of-b-fate">
 					<div class="v-of-b-fate-img">
-						<img src="img/Судьбу.png" alt="">
+						<a href="#" class="thumbnail">
+							<img src="img/Основной.png" alt="" class="img-responsive"  width="100%" height="100%">
+						</a>
 					</div>
 					<div class="v-of-b-fate-text">
 						<div class="v-of-b-fate-title">
@@ -287,7 +377,7 @@
 			</div>
 				<!-- 	закрывающий контейнер-->
 			<section class="table-programs">
-				<div class="container">
+				<div class="container" id="arkaim-programs">
 					<h2 class="text-center">Программы нашх туров в солнечный Аркаим</h2>
 					<div class="programs">
 						<div class="program-2-days">
@@ -480,15 +570,26 @@
 			<section class="reviews-clients">
 				<div class="container text-center">
 					<h2><span class="first-letter">О</span>тзывы участников наших поездок</h2>
-					<div class="videos d-flex justify-content-center">
-						<div class="arrows"><a href="#"><img src="img/next.png" alt=""></a></div>
-						<div class="video"><a href="#"><img src="img/Видео 1.png" alt=""></a></div>
-						<div class="video"><a href="#"><img src="img/Видео 2.png" alt=""></a></div>
-						<div class="video"><a href="#"><img src="img/Видео 3.png" alt=""></a></div>
-						<div class="arrows"><a href="#"><img src="img/next2.png" alt=""></a></div>
+					<div class="slider-1">
+					    <div class="slider__wrapper">
+					      <div class="slider__item slider__item__video">
+					      	<a href="https://www.youtube.com/watch?v=4mpRBJtycZ8&feature=youtu.be"><img src="img/Видео 1.png" alt=""></a>
+					      	<span class="review">Отзыв 05 - 2019</span>
+					      </div>
+					      <div class="slider__item slider__item__video">
+					      	<a href="https://www.youtube.com/watch?v=nNPXAkjzhX8&feature=youtu.be"><img src="img/Видео 2.png" alt=""></a>
+					      	<span class="review">Отзыв 04 - 2019</span>
+					      </div>
+					      <div class="slider__item slider__item__video">
+					      	<a href="https://www.youtube.com/watch?v=OQj2c_IDl9I&feature=youtu.be"><img src="img/Видео 3.png" alt=""></a>
+					      	<span class="review">Отзыв 2017 - 3</span>
+					      </div>
+					    </div>
+					    <a class="slider__control slider__control_left" href="#" role="button"></a>
+					    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
 					</div>
-				</div>
-				<hr>
+					<hr>
+				</div>		
 			</section>
 			<section class="tour-hosts">
 				<h2 class="text-center"><span class="first-letter">В</span>едущие исцеляющего тура</h2>
@@ -540,43 +641,37 @@
 				</div>
 			</section>
 			<section class="photos-arkaim">
-				<div class="container text-center">
-					<hr>
-					<h2><span class="first-letter">Ф</span>отографии Аркаима</h2>
-					<div class="photos d-flex align-items-center">
-						<div class="arrows">
-							<a href="#">
-								<img src="img/next.png" alt="">
-							</a>
-						</div>
-						<div class="cards-photos" style="position: relative;">
-							<a href="#" class="thumbnail">
+				<h2 class="text-center"><span class="first-letter">Ф</span>отографии Аркаима</h2>
+				<div class="container slider text-center">
+					<div class="photos slider__wrapper">
+						<div class="cards-photos slider__item" style="position: relative;">
+				      		<a href="#" class="thumbnail">
 								<img src="img/Основной.png" alt="" width="206px" height="163px">
 								<img src="img/lupa.png" class="lupa" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" alt="">
-							</a>
-						</div>
-						<div class="cards-photos" style="position: relative;">
-							<a href="#" class="thumbnail">
+					  		</a>
+				      	</div>
+				      	<div class="cards-photos slider__item" style="position: relative;">
+				        	<a href="#" class="thumbnail">
 								<img src="img/Мельница.png" alt="" width="206px" height="163px">
 								<img src="img/lupa.png" class="lupa" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" alt="">
 							</a>
-						</div>
-						<div class="cards-photos" style="position: relative;">
-							<a href="#" class="thumbnail">
+				      	</div>
+				      	<div class="cards-photos slider__item" style="position: relative;">
+				        	<a href="#" class="thumbnail">
 								<img src="img/Сидит.png" alt="" width="206px" height="163px">
 								<img src="img/lupa.png" class="lupa" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" alt="">
 							</a>
-						</div>
-						<div class="cards-photos" style="position: relative;">
-							<a href="#" class="thumbnail">
+				      	</div>
+						<div class="cards-photos slider__item" style="position: relative;">
+				        	<a href="#" class="thumbnail">
 								<img src="img/Сидит 1 (1).png" alt="" width="206px" height="163px">
-								<img src="img/lupa.png" class="lupa" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" alt=""></a></div>
-						<div class="arrows">
-							<a href="#"><img src="img/next2.png" alt=""></a></div>
+								<img src="img/lupa.png" class="lupa" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" alt="">
+							</a>
+				      	</div>
 					</div>
+					<a class="slider__control slider__control_left" href="#" role="button"></a>
+				    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
 				</div>
-
-
 				<div class="modal fade" id="image-modal">
 			        <div class="modal-dialog modal-lg">
 			        <div class="modal-content">
@@ -604,81 +699,59 @@
 							<ul>
 								<li><p>Как проехать туда</p>
 									<div>	
-										<a href="#">
-											<img src="img/_ копия 2.png" alt="">
-										</a>
+										<span>&#10010;</span>
 									</div>
 								</li>
 								<li><p>Как уехать обратно</p>
 									<div>	
-										<a href="#">
-											<img src="img/_ копия 2.png" alt="">
-										</a>
+										<span>&#10010;</span>
 									</div>
 								</li>
 								<li><p>Где будем жить</p>
 									<div>	
-										<a href="#">
-											<img src="img/_ копия 2.png" alt="">
-										</a>
+										<span>&#10010;</span>
 									</div>
 								</li>
 								<li><p>Что включено в стоимость</p>
 									<div>	
-										<a href="#">
-											<img src="img/_ копия 2.png" alt="">
-										</a>
+										<span>&#10010;</span>
 									</div>
 								</li>
 								<li><p>Что не включено в стоимость</p>
 									<div>	
-										<a href="#">
-											<img src="img/_ копия 2.png" alt="">
-										</a>
+										<span>&#10010;</span>
 									</div>
 								</li>
 								<li><p>Будет ли свободное время</p>
 									<div>	
-										<a href="#">
-											<img src="img/_ копия 2.png" alt="">
-										</a>
+										<span>&#10010;</span>
 									</div>
 								</li>
 							</ul>
 							<ul>
 								<li><p>	Нужна ли страховка</p>
 									<div>	
-										<a href="#">
-											<img src="img/_ копия 2.png" alt="">
-										</a>
+										<span>&#10010;</span>
 									</div>
 								</li>
 								<li><p>Есть ли ограничения по участию</p> 
 									<div>	
-										<a href="#">
-											<img src="img/_ копия 2.png" alt="">
-										</a>
+										<span>&#10010;</span>
 									</div>
 								</li>
 								<li><p>Групповой трансфер и стоимость <br> программы для индивидуальных групп</p>
 									<div>	
-										<a href="#">
-											<img src="img/_ копия 2.png" alt="">
-										</a>
+										<span>&#10010;</span>
 									</div>
 								</li>
 								<li><p>Что взять с собой</p>
 									<div>	
-										<a href="#">
-											<img src="img/_ копия 2.png" alt="">
-										</a>
+										<span>&#10010;</span>
 									</div>
 								</li>
 								<li><p>Нужно ли бронирование тура</p>
 									<div>	
-										<a href="#">
-											<img src="img/_ копия 2.png" alt="">
-										</a>
+										<span>&#10010;</span>
 									</div>
 								</li>
 							</ul>
@@ -687,7 +760,65 @@
 				</div>
 				
 			</section>
-			<div class="container d-flex justify-content-center flex-column">
+			<div class="container">
+				<section class="d-flex justify-content-center flex-column">
+					<h2>Насколько данный тур-семинар полезен </h2>
+					<div class="about-tour">
+						<div class="about-tour-img"><img src="img/ok копия.png" alt=""></div>
+						<div class="about-tour-txt">
+							<p>Это во многом зависит от вашего текущего состояния:</p>
+							<ul>
+								<li><span class="dash">-</span> насколько вам хочется отдохнуть / оторваться от суеты будней, от постоянного “груза незавершенных дел”;</li>
+								<li><span class="dash">-</span> насколько вы устали от постоянного давления городской атмосферы;</li>
+								<li><span class="dash">-</span> насколько вы хотите пообщаться со старыми знакомыми (если поедете в тур с кем-то в компании), или познакомиться с единомышленниками;</li>
+								<li><span class="dash">-</span> как сильно вы хотите понять как встать на путь оздоровления тела;</li>
+								<li><span class="dash">-</span> как давно вы хотите начать разбираться в том как добиться счастья в жизни, как обрести семью / или наладить текущие отношения;</li>
+								<li><span class="dash">-</span> как понять, что мешает исполнению ваших желаний;</li>
+								<li><span class="dash">-</span> или же просто насколько вам не хватает красоты вокруг?</li>
+							</ul>
+							<p>Именно это всё вы может получить в наших поездках!</p>
+						</div>
+					</div>
+				</section>
+				<section class="d-flex justify-content-center flex-column">
+					<h2>Насколько оправдана стоимость этого тура</h2>
+					<div class="about-tour">
+						<div class="about-tour-img abt-2-3"><img src="img/libra.png" alt=""></div>
+						<div class="about-tour-txt">
+							<p>Стоимость данного тура-семинара за 3 дня составляет 7900 рублей.</p>
+							<ul>
+								<li>Цена включает:</li>
+								<li><span class="dash">-</span> затраты на поездку, в которую включены проезд, проживание и питание;</li>
+								<li><span class="dash">-</span> проведение экскурсий по замечательным местам Южного Урала;</li>
+								<li><span class="dash">-</span> практики по оздоровлению (музыка, массаж, элементы йоги)</li>
+								<li><span class="dash">-</span> и затраты на тренинг по психологии, участие в семинаре по личностным отношениям с возможностью задать ваши вопросы.</li>
+							</ul>
+							<p>Вы можете сравнить эту стоимость с отдельными решениями: то есть отдельно посчитать проезд, проживание, питание на 3 дня; отдельные семинары (живые!), участие в каких-либо тренингах, в кружках, секциях по перечисленным темам. Это стоит гораздо дороже, причем информация там будет не выше уровнем.</p>
+							<p>Да, и ещё – как вы уже заметили, мы предлагаем существенную скидку на наш продукт, при заказе заранее за 3 дня (включительно) – стоимость будет 6500 рублей за 3 дня!</p>
+							<ul>
+								<li>Вы окупите свою инвестицию тем, что:</li>
+								<li><span class="dash">-</span> восстановите силы для плодотворной работы;</li>
+								<li><span class="dash">-</span> узнаете как восстанавливать здоровье без докторов;</li>
+								<li><span class="dash">-</span> возможно поймёте как восстановить отношения и обрести покой;</li>
+								<li><span class="dash">-</span> повидаете много красивых мест и зарядитесь позитивными эмоциями!</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="d-flex justify-content-center flex-column">
+					<h2>Гарантия на наши поездки</h2>
+					<div class="about-tour">
+						<div class="about-tour-img abt-2-3"><img src="img/735803.png" alt=""></div>
+						<div class="about-tour-txt">
+							<p>Наши предложения защищены гарантией на 365 дней. </p>
+							<p>Если вам что-то не понравится (при соблюдении условий поездки - см. часто задаваемые вопросы), и вы аргументированно об этом заявите, то мы вернем вам все деньги без проволочек.</p>
+							<p>Ваш риск минимален, а получаемая польза значительно превышает затраты.</p>
+							<p>Воспользуйтесь этим предложением сейчас!</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="container d-flex justify-content-center flex-column shipping-form-btm">
 				<h2>Как принять участие в туре в солнечный Аркаим</h2>
 				<p>Как принять участие в туре в солнечный Аркаим</p>
 				<div class="d-flex justify-content-center form-vs-img">
@@ -710,34 +841,188 @@
 						</div>
 					</section>
 				</div>
+				<p class="see-you">До встречи в путешествии!</p>
 			</div>
-		</main>
-		<footer>
+			<article id="footer">
+				<div class="footer-main-menu container">
+					<ul id="footer-menu" class="col-3">
+						<li>Главная</li>
+						<li>Программа тура</li>
+						<li>Фото Аркаима</li>
+						<li>Отзывы клиентов</li>
+						<li>О нас</li>
+						<li>Публикации в СМИ</li>
+						<li>Персональные программы</li>
+					</ul>
+					<ul class="col-3 our-contacts">
+						<li>
+							<p>Наши контакты:</p>
+						</li>
+						<li>
+							<p>E-mail: cropclass@mail.ru</p>
+						</li>
+						<li>
+							<p>Телефон: +7-989-95-85-705</p>
+						</li>
+						<li>
+							<p>Пн-Пт: 09:00 - 19:00</p>
+						</li>
+						<li>
+							<p>Сб: 09:00 - 14:00</p>
+						</li>
+						<li>
+							<p>Вс: Выходной</p>
+						</li>
+						<li>
+							<p>Без перерывов</p>
+						</li>
 
-		</footer>
+					</ul>
+					<ul class="col-3">
+						<li>Информация на данной странице сайта не является публичной офертой</li>
+						<li class="ftr-pltc"><a href="#">Политика конфиденциальности</a></li>
+					</ul>
+					<div class="col-3">
+						<p>Дружите с нами в соц. сетях</p>
+						<div class="footer-soc-ics d-flex justify-content-center">
+							<div>
+								<a href="https://vk.com/ufa_v_arkaim">
+									<img src="img/vk-social-network-logo.png" alt="">
+								</a>
+							</div>
+							<div>
+								<a href="https://www.instagram.com/arkaim_eco_tur">
+									<img src="img/instagram-logo2.png" alt="">
+								</a>
+							</div>
+						</div>
+						<p>&copy; 2020 &laquo;Аркаим Эко - Тур&raquo;</p>
+					</div>
+				</div>
+			</article>
+		</main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script>
-        // После загрузки DOM-дерева (страницы)
         $(function() {     
-          //при нажатии на ссылку, содержащую Thumbnail
           $('.thumbnail').click(function(e) {
-            //отменить стандартное действие браузера
             e.preventDefault();
-            //присвоить атрибуту scr элемента img модального окна
-            //значение атрибута scr изображения, которое обёрнуто
-            //вокруг элемента a, на который нажал пользователь
             $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
-            //открыть модальное окно
             $("#image-modal").modal('show');
           });
-          //при нажатию на изображение внутри модального окна 
-          //закрыть его
           $('#image-modal .modal-body img').on('click', function() {
             $("#image-modal").modal('hide')
           });
         });
-    </script>
+</script>
+<script>
+    'use strict';
+    var multiItemSlider = (function () {
+      return function (selector, config) {
+        var
+          _mainElement = document.querySelector(selector), // основный элемент блока
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = []; // массив элементов
+
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var position = {
+          getItemMin: function () {
+            var indexItem = 0;
+            _items.forEach(function (item, index) {
+              if (item.position < _items[indexItem].position) {
+                indexItem = index;
+              }
+            });
+            return indexItem;
+          },
+          getItemMax: function () {
+            var indexItem = 0;
+            _items.forEach(function (item, index) {
+              if (item.position > _items[indexItem].position) {
+                indexItem = index;
+              }
+            });
+            return indexItem;
+          },
+          getMin: function () {
+            return _items[position.getItemMin()].position;
+          },
+          getMax: function () {
+            return _items[position.getItemMax()].position;
+          }
+        }
+
+        var _transformItem = function (direction) {
+          var nextItem;
+          if (direction === 'right') {
+            _positionLeftItem++;
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) > position.getMax()) {
+              nextItem = position.getItemMin();
+              _items[nextItem].position = position.getMax() + 1;
+              _items[nextItem].transform += _items.length * 100;
+              _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+            }
+            _transform -= _step;
+          }
+          if (direction === 'left') {
+            _positionLeftItem--;
+            if (_positionLeftItem < position.getMin()) {
+              nextItem = position.getItemMax();
+              _items[nextItem].position = position.getMin() - 1;
+              _items[nextItem].transform -= _items.length * 100;
+              _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+            }
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          if (e.target.classList.contains('slider__control')) {
+            e.preventDefault();
+            var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+            _transformItem(direction);
+          }
+        };
+
+        var _setUpListeners = function () {
+          // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+          _sliderControls.forEach(function (item) {
+            item.addEventListener('click', _controlClick);
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          }
+        }
+
+      }
+    }());
+    var slider = multiItemSlider('.slider');
+    var slider1 = multiItemSlider('.slider-1')
+</script>
 </body>
 </html>
