@@ -781,6 +781,7 @@ section h3 {
 }
 #footer {
 	background: url('../img/Судьбу.png') center center no-repeat;
+	background-size: cover;
 	color: #ffffff;
 }
 .footer-main-menu {
