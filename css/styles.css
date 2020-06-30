@@ -18,7 +18,7 @@ header {
 	justify-content: space-around;
 }
 .header-buttons {
-	display: 	flex;
+	display: flex;
 	flex-direction: column;	
 }
 .navbar-light .navbar-nav .nav-link {
@@ -605,6 +605,17 @@ section h3 {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+.instructor {
+	width: 285px;
+	height: 212px;
+	margin: auto;
+}
+.instructor img {
+	object-fit: cover;
+	object-position: center bottom;
+	border-radius: 10px;
+	box-shadow: 0 0 9px rgba(0,0,0,0.5);
+}
 .instructor-explorer {
 	flex-basis: 50%;
 	margin-left: 25px;
@@ -615,8 +626,6 @@ section h3 {
 }
 .instructor-explorer:first-child {
 	border-right: 1px solid rgba(0,0,0,0.1);
-	/*border-opacity: 0.1;*/
-
 }
 .tour-hosts ul {
 	padding-left: 0;
@@ -627,7 +636,6 @@ section h3 {
 .old-instructor .container {
 	display: flex;
 	justify-content: center;
-
 }
 .old-instructor-profile, .old-instructor-txt {
 	padding: 0 20px;
@@ -637,6 +645,15 @@ section h3 {
 }
 .travel-program {
 	margin-bottom: 0;
+}
+.old-instructor-img {
+	width: 285px;
+	height: 212px;
+}
+.old-instructor-img img {
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 0 9px rgba(0,0,0,0.5);
 }
 .old-instructor-txt {
 	padding-top: 35px;
