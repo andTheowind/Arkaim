@@ -402,10 +402,23 @@
 								<li><div class="dot dot-2"></div><div>Время на экскурсию, гора Покаяния, гора Желаний, гора Любви</div></li>
 								<li><div class="dot dot-2"></div><div>лекция-семинар "Счастье во взаимоотношениях". Ведущий -</div></li>
 								<li><div class="dot-2 last-step"></div><div class="last-li">Эдуард Фаритович</div></li>
-								<li class="duration">
-									<p>Продолжительность 1,5 часа, плюс ответы на вопросы. <br>
-										... <a href="#"><span class="show-more">показать далее</span></a>
-									</p>
+								<li class="duration column-left-1">
+									<p class="hide">
+										Продолжительность 1,5 часа,	плюс ответы на вопросы. <br> 
+										
+										Обед, свободное время. <br>
+										Выезд на г. Любви, купание. <br>
+										Продолжение лекции-семинара "Счастье в семье" - 1,5 часа. <br>
+										<br>
+
+										Фото у старой мельницы. <br>
+										Будет выделено время для посещения места раскопок в самом заповеднике - городище Аркаим (Стоимость доп. 400 руб. Рекомендуем посетить тем кто в первый раз, - это особое место силы). <br>
+										<br>
+										Свободное время, ужин, провожаем Солнце. Чай, костер, отбой.
+ 									</p>
+									<a href="#" class="big-red-btn-1">
+										<span class="show-more">... показать далее</span>
+									</a>
 								</li>
 							</ul>
 							<ul>
@@ -413,7 +426,19 @@
 								<li><div class="dot dot-2"></div><div>Воскресенье. Встреча Солнца</div></li>
 								<li><div class="dot dot-2"></div><div>свободное время, завтрак, сбор</div></li>
 								<li><div class="dot dot-2"></div><div>посещение г. Здоровья, г. Денежная</div></li>
-								<li><div class="dot dot-2"></div><div>экскурсионная программа, разные практики (+ ещё одна гора-место силы) ... <a href="#"><span class="show-more">показать далее</span></a></div></li>
+								<li><div class="dot dot-2"></div>
+									<div class="column-left-2">
+										<p class="hide">
+										экскурсионная программа, разные практики (+ ещё одна гора-место силы)<br>
+										выезд, обратная дорога: остановка в горах,  <br>
+										купание / солнечные ванны на солёном озере (по погоде)  <br>
+										Приезд в Уфу в 20-22 ч.  <br>
+										<br>
+										Трансфер Уфа - Аркаим - автобус типа Mercedes Transporter
+										</p>
+										<a href="#" class="big-red-btn-2"><span class="show-more">... показать далее</span></a>
+									</div>
+								</li>
 							</ul>
 							<div class="tour-cost">
 								<div><img src="img/payment.png" alt=""></div>
@@ -1035,6 +1060,24 @@
     }());
     var slider = multiItemSlider('.slider');
     var slider1 = multiItemSlider('.slider-1')
+</script>
+<script>
+	
+    $('.column-left-1 a').click(function() {
+    $('.column-left-1 p').removeClass('hide');
+    $('.big-red-btn-1').addClass('display-none');
+        return false;
+  });
+    
+</script>
+<script>
+	
+    $('.column-left-2 a').click(function() {
+    $('.column-left-2 p').removeClass('hide');
+    $('.big-red-btn-2').addClass('display-none');
+        return false;
+  });
+    
 </script>
 </body>
 </html>

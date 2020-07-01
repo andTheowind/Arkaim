@@ -434,6 +434,15 @@ hr {
 }
 .duration {
 	margin-left: 27px;
+	display: flex;
+	flex-direction: column;
+}
+.column-left-1 .hide, .column-left-2 .hide {
+    height: 20px;
+    overflow: hidden;
+}
+.display-none {
+	display: none;
 }
 .tour-cost {
 	display: flex;
