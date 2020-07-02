@@ -334,7 +334,7 @@ hr {
 }
 .stages {
 	display: 	flex;	
-	padding: 11px 14px 11px 18px;
+	padding: 7px 2px 5px 2px;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 	border-radius: 	15px;
 	margin-bottom: 	14px;
@@ -344,9 +344,33 @@ hr {
 	background-color: rgba(0, 0, 0, 0.22);
 	cursor: pointer;
 }
+.card-header {
+	background-color: transparent;
+	border-bottom: none;
+	padding: 0;
+	background: url('../img/_.png') no-repeat center right;
+	background-position: 98% 50%;
+}
+.card-header .btn-link {
+	color: #000000;
+}
+.card-header .btn-link:hover, .card-header .btn-link:active, .card-header .btn-link:focus {
+	text-decoration: none;
+}
+.card-header .btn.focus, .btn:focus {
+	box-shadow: none;
+}
+.card-header .btn {
+	text-align: left;
+	width: 100%;
+}
+.card-body ul li {
+	list-style-type: none;
+}
+.card-body ul {
+	padding: 0;
+}
 .stages p {
-	margin: 0;
-	flex-basis: 96%;
 }
 #first-arrow {
 	margin-top: 12px;
