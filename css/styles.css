@@ -157,6 +157,9 @@ hr {
 	max-height: 467px;
 	max-width: 268px;
 }
+.changes-life-img a {
+	cursor: zoom-in;
+}
 .changes-life-img img {
 	margin-top: 35px !important;
 	object-fit: cover;
@@ -221,6 +224,9 @@ hr {
 	min-height: 327px;
 	max-height: 327px;
 }
+.climbing-experience-img a {
+	cursor: zoom-in;
+}
 .climbing-experience-img img {
 	object-fit: cover;
 	border-radius: 10px;
@@ -256,6 +262,9 @@ hr {
 	max-height: 218px;
 	min-height: 218px;
 }
+.answers-on-questions-img a {
+	cursor: zoom-in;
+}
 .answers-on-questions-img img {
 	object-fit: cover;
 	border-radius: 10px;
@@ -285,6 +294,9 @@ hr {
 	min-width: 490px;
 	height: 285px;
 	min-height: 285px;
+}
+.practical-experience-img a {
+	cursor: zoom-in;
 }
 .practical-experience-img img {
 	object-fit: cover;
@@ -318,6 +330,9 @@ hr {
 	margin-top: 20px;
 	width: 362px;
 	height: 195px;
+}
+.our-method-img a {
+	cursor: zoom-in;
 }
 .our-method-img img {
 	object-fit: cover;
@@ -382,6 +397,9 @@ hr {
 .v-of-b-fate-img {
 	width: 394px;
 	height: 271px;
+}
+.v-of-b-fate-img a {
+	cursor: zoom-in;
 }
 .v-of-b-fate-img img {
 	object-fit: cover;
@@ -533,6 +551,9 @@ hr {
 	width: 354px;
 	min-height: 188px;
 	height: 188px;
+}
+.all-is-provided-img a {
+	cursor: zoom-in;
 }
 .all-is-provided-img img {
 	object-fit: cover;
@@ -688,6 +709,9 @@ section h3 {
 	height: 212px;
 	margin: auto;
 }
+.instructor a {
+	cursor: zoom-in;
+}
 .instructor img {
 	object-fit: cover;
 	object-position: center bottom;
@@ -728,6 +752,9 @@ section h3 {
 	width: 268px;
 	height: 193px;
 	padding-top: 13px;
+}
+.old-instructor-img a {
+	cursor: zoom-in;
 }
 .old-instructor-img img {
 	object-fit: cover;
@@ -781,7 +808,7 @@ section h3 {
 	margin-top: 30px;
 	color: #fff;
 	background: url('../img/Слой 536.png') center center no-repeat;
-	min-height: 100%;
+	max-height: 1440px;
   	background-size: cover;
 	padding: 84px 0; 
 }
@@ -822,7 +849,7 @@ section h3 {
 }
 .about-tour {
 	display: flex;
-	line-height: 1;
+	line-height: 1.4;
 	margin: 0 0 40px 0;
 }
 .about-tour-img {
@@ -835,6 +862,7 @@ section h3 {
 }
 .about-tour p {
 	margin: 13px 0;
+	line-height: 1.48;
 }
 .about-tour ul {
 	padding: 0;
