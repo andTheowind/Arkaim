@@ -129,7 +129,28 @@
 								<img src="img/phone-call.png" alt="">
 								<span>8 (989) 958-57-05</span>
 								<div class="btn-call">
-									<button type="button" class="btn btn-primary btn-sm">Заказать обратный звонок</button>
+									<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target=".bd-example-modal-sm">Заказать обратный звонок</button>
+
+									<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-sm">
+									    <div class="modal-content text-center">
+										  <div class="call-modal-header">
+									      	<h2><span class="first-letter">З</span>аказать обратный звонок</h2>
+									      	<button type="button" class="close" data-dismiss="modal">X</button>
+										  </div>
+
+									      <form action="">
+										      <div class="inputs">
+										      	<input  id="phone" class="icon-phone" type="text" placeholder="Ваш телефон">
+										      </div>
+										      <a href="#">
+												  <button type="button" class="btn btn-primary">Перезвоните мне</button>
+											  </a>
+									      </form>
+									    </div>
+									  </div>
+									</div>
+
 								</div>
 							</div>
 						</div>
@@ -1078,6 +1099,14 @@
         return false;
   });
     
+</script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script>
+$(function(){
+  $("#phone").mask("8(999) 999-9999", {
+    completed: function(){ alert("Вы ввели номер: " + this.val()); }
+  });
+});
 </script>
 </body>
 </html>
