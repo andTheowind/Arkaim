@@ -124,13 +124,14 @@ header .title-text p {
 }
 .watch-program .btn {
 	height: 38px;
-	width: 228px;
+	width: 242px;
 	box-shadow: 0 0 13px rgba(1, 162, 166, 0.7);
 	background-color: #01a2a6;
 	border-radius: 30px;
 	margin-bottom: 80px;
 }
 .watch-program .btn img {
+	margin-top: 2px;
 	margin-left: 2px;
 }
 section h2 {
@@ -823,6 +824,10 @@ section h3 {
 }
 .answers-lists ul {
 	padding: 0 20px;
+	flex-basis: 50%;
+}
+.answers-lists ul summary::-webkit-details-marker {
+    display: none;
 }
 .answers-lists ul:first-child {
 	margin-right: 150px;
@@ -834,11 +839,22 @@ section h3 {
 	border-bottom: 	2px solid black;
 	border-image: linear-gradient(90deg, rgba(57,58,60,1) 0%, rgba(93,94,95,1) 25%, rgba(182,182,183,1) 50%, rgba(93,94,95,1) 75%, rgba(57,58,60,1) 100%);
     border-image-slice: 1;	
+    width: 100%;
+}
+.answers-lists ul li details {
+	min-width: 250px;
+	width: 100%;
+}
+.answers-lists ul li .btn {
+	padding-left: 0;
+	padding-right: 0;
 }
 .answers-lists ul li p {
 	padding: 13px 13px 13px 0;
 	flex-basis: 97%;
 	margin: 0;
+	color: #fff;
+	text-align: left;
 }
 .answers-lists span {
 	color: #01a2a6;
@@ -846,6 +862,15 @@ section h3 {
 }
 .answers-lists span:hover {
 	cursor: pointer;
+}
+.answers-lists .content_wrapper {
+	width: 100%;
+}
+.answers-lists .content_wrapper > ul {
+	padding: 0;
+}
+.answers-lists .content_wrapper > ul li {
+	border: none;
 }
 .about-tour {
 	display: flex;
@@ -877,7 +902,9 @@ section h3 {
 .finger {
 	margin: 0 40px 0 0;
 }
-.shipping-form-btm {
+.shipping-form-btm h2 {
+	font-size: 22px;
+	font-weight: 600;
 }
 .shipping-form-2 {
 	margin-top: 0;
