@@ -46,6 +46,10 @@ header {
 .back-call {
 	padding-left: 35px;
 }
+.back-call .modal.show .modal-dialog {
+	margin-top: 70px;
+	margin-left: 68%;
+}
 .btn-call .btn-primary {
 	width: 200px;
 	height: 24px;
