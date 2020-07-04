@@ -834,8 +834,6 @@ section h3 {
 .answers-lists ul:first-child {
 	flex-basis: 36%;
 }
-.answers-lists2 {
-}
 .answers-lists ul summary {
 	min-width: 100%;
 }
@@ -849,8 +847,6 @@ section h3 {
 	border-bottom: 	2px solid black;
 	border-image: linear-gradient(90deg, rgba(57,58,60,1) 0%, rgba(93,94,95,1) 25%, rgba(182,182,183,1) 50%, rgba(93,94,95,1) 75%, rgba(57,58,60,1) 100%);
     border-image-slice: 1;	
-}
-.answers-lists2 li {
 }
 .answers-lists ul li details {
 	min-width: 100%;
@@ -924,14 +920,26 @@ section h3 {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.see-you {
+.block-see-you {
 	margin-top: 34px;
-	margin-left: 18%;
+	margin-left: 200px;
 	margin-bottom: 32px;
+	width: 827px;
+}
+.block-see-you p {
+	margin-top: 2px;
+}
+.see-you {
 	color: #000000;
 	font-family: "Balsamiq Sans";
 	font-size: 16px;
 	font-weight: 400;
+}
+#on-main {
+	margin-right: 10px;
+	color: #0066ff;
+	text-decoration: underline;
+	cursor: pointer;
 }
 .modal.show .modal-dialog {
 	margin: auto;

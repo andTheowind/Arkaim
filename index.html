@@ -141,7 +141,7 @@
 
 									      <form action="">
 										      <div class="inputs">
-										      	<input  id="phone" class="icon-phone" type="text" placeholder="Ваш телефон">
+										      	<input class="icon-phone phone" type="text" placeholder="Ваш телефон">
 										      </div>
 										      <a href="#">
 												  <button type="button" class="btn btn-primary">Перезвоните мне</button>
@@ -596,9 +596,9 @@
 					</div>
 					<form action="">
 						<div class="inputs">
-							<input class="icon-man" type="text" placeholder="Ваше имя">
-							<input class="icon-phone" type="text" placeholder="Ваш телефон">
-							<input class="icon-email" type="text" placeholder="Ваш E-mail">
+							<input class="icon-man name" type="text" placeholder="Ваше имя">
+							<input class="icon-phone phone" type="text" placeholder="Ваш телефон">
+							<input name="contactsForm" class="icon-email contactsForm" type="text" placeholder="Ваш E-mail">
 						</div>
 						<button>Отправить заявку</button>
 					</form>
@@ -888,7 +888,6 @@
 									  <summary class='btn d-flex align-items-center'><p>Что взять с собой</p><span>&#10010;</span></summary>
 									  <div class="content_wrapper"><p>С собой взять: </p>
 									  	<ul>
-									  		
 											<li>
 												- еда и вода в дорогу и на перекус: фрукты, бутерброд – подобное
 											</li>
@@ -919,10 +918,7 @@
 											<li>
 												- можно взять фонарик, фотоаппарат, термос с гор.чаем
 											</li>
-
 									  	</ul>
-
-
 										<p>Список примерный, что-то можно заменить.</p>
 								      </div>
 									</details>
@@ -936,7 +932,6 @@
 							</ul>
 						</div>
 				</div>
-				
 			</section>
 			<div class="container">
 				<section class="d-flex justify-content-center flex-column">
@@ -1007,9 +1002,9 @@
 						</div>
 						<form action="">
 							<div class="inputs">
-								<input class="icon-man" type="text" placeholder="Ваше имя">
-								<input class="icon-phone" type="text" placeholder="Ваш телефон">
-								<input class="icon-email" type="text" placeholder="Ваш E-mail">
+								<input class="icon-man name" type="text" placeholder="Ваше имя">
+								<input class="icon-phone phone" type="text" placeholder="Ваш телефон">
+								<input name="contactsForm" class="icon-email contactsForm" type="text" placeholder="Ваш E-mail">
 							</div>
 							<button>Отправить заявку</button>
 						</form>
@@ -1019,7 +1014,17 @@
 						</div>
 					</section>
 				</div>
-				<p class="see-you">До встречи в путешествии!</p>
+				<div class="block-see-you d-flex align-items-center justify-content-between">
+					<p class="see-you">До встречи в путешествии!</p>
+					<div class="d-flex">
+							<p id="on-main">На главную</p>
+							<div>
+								<a href="#">	
+									<img src="img/_ копия3.png" alt="">
+								</a>
+							</div>
+					</div>
+				</div>
 			</div>
 			<article id="footer">
 				<div class="footer-main-menu container">
@@ -1221,9 +1226,10 @@
     
 </script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/inputmask.js"></script>
 <script>
 $(function(){
-  $("#phone").mask("8(999) 999-9999", {
+  $(".phone").mask("8(999) 999-9999", {
     completed: function(){ alert("Вы ввели номер: " + this.val()); }
   });
 });
@@ -1232,6 +1238,32 @@ $(function(){
 	 $("#all").click(function () {
      $('input:checkbox').not(this).prop('checked', this.checked);
  });
+</script>
+<script> 
+$("#email").inputmask("email", { onUnMask: function(maskedValue, unmaskedValue) {
+	return unmaskedValue;
+}});
+
+$("#unmask").click(function(){
+	$("#val").text($("#email").val());
+	$("#unmasked").text($("#email").inputmask('unmaskedvalue'));
+});
+</script>
+<script>
+	$('.name').on('keypress', function() {
+	    var that = this;
+
+	    setTimeout(function() {
+	        var res = /[^а-яА-Яa-zA-Z]/g.exec(that.value);
+	        console.log(res);
+	        that.value = that.value.replace(res, '');
+	    }, 0);
+	});
+</script>
+<script>
+	$(document).ready(function(){   
+    $(".contactsForm").inputmask("email")
+  });
 </script>
 </body>
 </html>
