@@ -235,8 +235,8 @@ hr {
 }
 .gray-background {
 	background: url('../img/Обложка_благодарность.png') center center no-repeat;
-	min-height: 100%;
 	background-size: cover;
+	max-height: 1440px;
 }
 .answers-on-questions {
 	padding-top: 100px;
