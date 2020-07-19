@@ -90,6 +90,13 @@ header {
 .modal-backdrop {
 	background-color: transparent !important;
 }
+.modal-footer {
+	padding: 7px;
+}
+.modal-footer .btn {
+	margin: 0;
+	width: 110px;
+}
 .call-modal-header {
 	display: flex;
 	align-items: center;
